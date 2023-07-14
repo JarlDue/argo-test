@@ -18,3 +18,22 @@ spec:
           ports:
             - name: http-port
               containerPort: 8080
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: hello-max
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/JarlDue/argo-test
+    targetRevision: HEAD
+    path: kubernetes/deployment-2.yaml  # Update the path to the deployment-2.yaml file
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: echo-server  # Assuming you want to deploy it in the same namespace as echo-server
+  syncPolicy:
+    automated:
+      prune: false
+      selfHeal: false
