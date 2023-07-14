@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: hello-max
-          image: edbafjdu/hello_max:0.1
+          image: edbafjdu/hello_max
           ports:
             - name: http-port
               containerPort: 8080
