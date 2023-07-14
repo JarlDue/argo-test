@@ -1,19 +1,19 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: hello_max
+  name: hello-max
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: https://github.com/JarlDue/argo-test
     targetRevision: HEAD
-    path: kubernetes/hello_max
+    path: kubernetes/hello-max-deployment.yaml
     directory:
       recurse: true
   destination:
     server: https://kubernetes.default.svc
-    namespace: hello_max
+    namespace: hello-max
   syncPolicy:
     automated:
       prune: false

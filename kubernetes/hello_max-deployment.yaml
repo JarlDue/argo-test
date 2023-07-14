@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello_max
+  name: hello-max
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hello_max
+      app: hello-max
   template:
     metadata:
       labels:
-        app: hello_max
+        app: hello-max
     spec:
       containers:
-        - name: hello_max
+        - name: hello-max
           image: edbafjdu/hello_max:0.1
           ports:
             - name: http-port
