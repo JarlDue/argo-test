@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/JarlDue/argo-test
     targetRevision: HEAD
-    path: kubernetes/hello-max-deployment.yaml
+    path: kubernetes/hello-max
     directory:
       recurse: true
   destination:
