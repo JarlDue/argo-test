@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/omegion/echo-k8s-app/
+    repoURL: https://git.sos.eu/projects/HJ/repos/fake-argo/browse
     targetRevision: HEAD
     path: kubernetes
     directory:
