@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://git.sos.eu/projects/HJ/repos/fake-argo/
+    repoURL: https://git.sos.eu/projects/HJ/repos/fake-argo
     targetRevision: HEAD
     path: kubernetes
     directory:
